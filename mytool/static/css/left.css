@@ -1,12 +1,37 @@
 .container{
     position: absolute;
+    align-items: center;
+    justify-content: center;
 
+}
+
+.button-box{
+    margin-top: 5px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.label-box{
+    margin-top: 20px;
+    text-align: center;
+    width: 100%;
+    position: relative;
+    background-color: rgb(204, 224, 217);
 }
 
 .label-container{
-    text-align: center;
-    position: relative;
     width: 100%;
-    background-color: rgb(204, 224, 217);
+    text-align: center;
+    position: absolute;
+    display: none;
 }
+
+.label-container.label-active{
+    display: block;
+}
+
+/* .button.btn-active{
+    background-color: rgb(149, 149, 208);
+} */
 

@@ -7,41 +7,39 @@
     <link rel="stylesheet" href="{% static 'css/left.css' %}" type="text/css">
     <link rel="stylesheet" href="../static/css/left.css" type="text/css">
 </head>
-<div class="container">
-    <div class="button-box">
-        <button type="button" class="btn btn-primary active-btn">Text</button>
-        <button type="button" class="btn btn-primary">UI</button>
-    </div>
 
-    <div class="label-box">
-        <div class="label-container active-text">
-            Text
+<body>
+
+
+    <div class="container">
+        <div class="button-box">
+            <input type="button" class="button btn-active" value="Text" onclick="showReview()">
+            <input type="button" class="button " value="UI" onclick="showReview()">
         </div>
 
-        <div class="label-container">
-            UI
+        <div class="label-box">
+            <div class="label-container label-active">Text</div>
+            <div class="label-container">UI</div>
         </div>
+
 
     </div>
 
+    <script>
+        let labels = document.getElementsByClassName("label-container")
+        let buttons = document.getElementsByClassName("button")
+        function showReview() {
 
-</div>
+            for (label of labels) {
+                label.classList.remove("label-active")
+            }
+            let i = Array.from(buttons).indexOf(event.target)
+            labels[i].classList.add("label-active")
 
-<script>
-    let label_boxes = document.getElementsByClassName("label-container")
-    let btns = document.getElementsByClassName("btn")
-    function showReview() {
-        for (btn of btns) {
-            btn.classList.remove("active-btn")
         }
-        for (label_boxe of label_boxes) {
-            label_boxe.classList.remove("active-text")
-        }
-        let i = Array.from(btns).indexOf(event.target)
-        btns[i].classList.add("active-pic")
-        label_boxes[i].classList.add("active-text")
-    }
 
-</script>
+    </script>
+
+</body>
 
 </html>
