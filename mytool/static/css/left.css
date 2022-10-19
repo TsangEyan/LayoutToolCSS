@@ -1,0 +1,12 @@
+.container{
+    position: absolute;
+
+}
+
+.label-container{
+    text-align: center;
+    position: relative;
+    width: 100%;
+    background-color: rgb(204, 224, 217);
+}
+
