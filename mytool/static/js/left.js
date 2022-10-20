@@ -1,5 +1,8 @@
 let labels = document.getElementsByClassName("label-container")
 let buttons = document.getElementsByClassName("button")
+for (button of buttons) {
+    button.addEventListener('click', showReview);
+}
 function showReview() {
     for (label of labels) {
         label.classList.remove("label-active")
@@ -8,3 +11,4 @@ function showReview() {
     labels[i].classList.add("label-active")
 
 }
+
