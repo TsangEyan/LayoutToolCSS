@@ -1,3 +1,210 @@
 .header{
-    
+
+}
+/* style for logo */
+.logo{
+    /* image.png */
+    position: absolute;
+    width: 61px;
+    height:68px;
+    top: 18px;
+    left: 15px;
+    background-image: url("../img/logo.png");
+
+    border-radius: 93px;
+}
+
+/* style for back button */
+.btn-back>button{
+    /* back */
+    position: absolute;
+    width: 64px;
+    height: 64px;
+    top: 18px;
+    left: 123px;
+
+    border: none;
+    background: rgb(103, 158, 243);
+    box-shadow: 0px 0px 28px rgba(31, 34, 37, 0.08);
+    border-radius: 12px;
+
+
+    /* 自动布局 */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 0px;
+}
+
+/* image for back button */
+.btn-back-img{
+    /* corner-up-left */
+    position: absolute;
+    width: 25px;
+    height: 22px;
+    top: 22.5px;
+    left: 20.5px;
+
+    border: none;
+    background-image: url("../img/corner-up-left.png");
+}
+
+/* style for front button */
+.btn-front>button{
+    /* front */
+    position: absolute;
+    width: 64px;
+    height: 64px;
+    top: 18px;
+    left: 202px;
+
+    border: none;
+    background: rgb(103, 158, 243);
+    box-shadow: 0px 0px 28px rgba(31, 34, 37, 0.08);
+    border-radius: 12px;
+
+
+    /* 自动布局 */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 0px;
+}
+
+/* image for front button */
+.btn-front-img{
+    /* corner-up-left */
+    position: absolute;
+    width: 25px;
+    height: 22px;
+    top: 22.5px;
+    left: 20.5px;
+
+    border: none;
+    background-image: url("../img/corner-up-right.png");
+}
+
+/* style for about button */
+.btn-about>button{
+    /* ABOUT */
+    position: absolute;
+    width: 130px;
+    height: 64px;
+    top: 18px;
+    left: 1609px;
+
+    border: none;
+    background: rgb(103, 158, 243);
+    box-shadow: 0px 0px 28px rgba(31, 34, 37, 0.08);;
+    border-radius: 12px;
+
+
+    /* 自动布局 */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 0px;
+}
+
+/* text on front button */
+.btn-about-text{
+    /* ABOUT */
+    position: static;
+    width: 139px;
+    height: 33px;
+
+
+    color: rgb(255, 255, 255);
+    font-family: Noto Sans SC;
+    font-size: 24px;
+    font-weight: 500;
+    line-height: 36px;
+    letter-spacing: 0px;
+    text-align: center;
+
+    /* 自动布局 */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 0px;
+
+
+    /* Inside Auto Layout */
+    flex: none;
+    order: 0;
+    flex-grow: 0;
+    margin: 9px 0px;
+}
+
+/* style for export button */
+.btn-export>button{
+    /* 导出 */
+    position: absolute;
+    width: 130px;
+    height: 64px;
+    top: 18px;
+    left: 1775px;
+
+    border: none;
+    background: rgb(103, 158, 243);
+    box-shadow: 0px 0px 28px rgba(31, 34, 37, 0.08);;
+    border-radius: 12px;
+
+
+    /* 自动布局 */
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 20px 0px 20px 0px;
+}
+
+/* text on export button */
+.btn-export-text{
+    /* 导出 */
+    position: static;
+    width: 40px;
+    height: 30px;
+
+
+    color: rgb(255, 255, 255);
+    font-family: Noto Sans SC;
+    font-size: 20px;
+    font-weight: 500;
+    line-height: 30px;
+    letter-spacing: 0px;
+    text-align: left;
+
+    /* 自动布局 */
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 20px 0px 20px 0px;
+
+
+    /* Inside Auto Layout */
+    flex: none;
+    order: 1;
+    flex-grow: 0;
+    margin: 0px 9px;
+}
+
+/* image for export button */
+.btn-export-img{
+    /* ic_分享 */
+    position: static;
+    width: 24px;
+    height: 24px;
+
+    /* Inside Auto Layout */
+    flex: none;
+    order: 0;
+    flex-grow: 0;
+    margin: 0px 9px;
+    background-image: url("../img/export.png");
 }
